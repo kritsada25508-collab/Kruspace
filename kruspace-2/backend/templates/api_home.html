@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f7f2" />
+  <title>KruSpace Python API</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='attendance.css') }}" />
+</head>
+<body>
+  <main class="page-wrap">
+    <section class="welcome-card">
+      <div class="welcome-copy">
+        <div class="eyebrow">PYTHON · FLASK · SQLITE</div>
+        <h1>KruSpace<br /><em>attendance API</em></h1>
+        <p>The sample Python backend is running and ready to receive attendance check-ins.</p>
+      </div>
+      <div class="welcome-art" aria-hidden="true"><div class="sun"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="leaf leaf-three"></div><div class="pot"></div><div class="spark">✳</div></div>
+    </section>
+    <section class="roster-card" style="margin-top:14px;padding:18px">
+      <span class="eyebrow">AVAILABLE ROUTES</span>
+      <h2 style="color:#3f5946;font-family:'Fraunces',Georgia,serif;font-weight:500">Attendance service</h2>
+      <p>Marks are stored in a local SQLite database by date and student ID. This demo uses fictional students and has no production authentication.</p>
+      <p><a class="save-button" href="/attendance">Open the attendance workspace →</a></p>
+      <p><a class="api-link" href="/api/v0/attendant">GET /api/v0/attendant · JSON API</a></p>
+    </section>
+  </main>
+</body>
+</html>
